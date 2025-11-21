@@ -6,7 +6,7 @@
 ((___/ /   / /              __/ /___ //   |/ / ((____/ / ((___/ / //____/ / ((___/ / ((___ / /    
 #
 STEP BY STEP:
-1>> CentOS 6 VPS // Dedicated bulletproof server
+1>> CentOS 6 only VPS // Dedicated bulletproof server
 
 2> yum install deltarpm -y && yum install httpd -y && yum install iptables -y
 
@@ -25,12 +25,15 @@ STEP BY STEP:
 9> CTRL + A + D TO DETACH THE SCREEN
 
 10>> LOGIN WITH PUTTY RAW PORT = SCREENPORT
+
+setup on my bulletproof servers is 300$ crypto contact Session: 05d851c5208584223162594e89ff51d0741c93567f0f47fe2ea4c67fa19e44b643 
                                ___   ___                                                          
      ___                          / /    /|    / / //   ) )  //   / / //   ) )  //   / / //   ) ) 
    //   ) ) /_  /                / /    //|   / / //        //   / / //___/ /  //   / / ((        
   //   / /   / /    ____        / /    // |  / / //        //   / / / __  (   //   / /    \\      
  //   / /   / /                / /    //  | / / //        //   / / //    ) ) //   / /       ) )   
 ((___/ /   / /              __/ /___ //   |/ / ((____/ / ((___/ / //____/ / ((___/ / ((___ / /    
+
 
 
 
